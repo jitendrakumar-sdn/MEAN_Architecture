@@ -29,10 +29,7 @@ import { blogSchema } from './Modal/blog_schema';
         expiresIn: 3600,
       },
     }),
-    // MongooseModule.forRoot('mongodb://localhost:27017/swimapp', {
-    //   user: 'swimapp',
-    //   pass: 'Swim2App9851'
-    // }),
+   
     MongooseModule.forFeature([
       { name: 'userData', schema: userSchema },
       { name: 'blog', schema: blogSchema },
